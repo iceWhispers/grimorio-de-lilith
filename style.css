@@ -1,70 +1,50 @@
 
 body {
-    margin: 0;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
     font-family: 'Georgia', serif;
-    background-color: #0b0b0b;
-    color: #e4dfe0;
-}
-
-.container {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-header h1 {
-    font-size: 3em;
-    color: #a073d1;
-}
-
-header h2 {
-    font-size: 1.8em;
-    color: #ffffff;
-}
-
-.intro-question {
-    font-style: italic;
-    color: #ccc;
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style-type: none;
+    margin: 0;
     padding: 0;
-    text-align: center;
 }
-
-nav li {
-    display: inline-block;
-    margin: 5px 10px;
-}
-
-nav a {
-    color: #cfa7ff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    margin-top: 30px;
+.container {
+    max-width: 800px;
+    margin: 5% auto;
     padding: 20px;
-    background-color: #1a1a1a;
-    border: 1px solid #333;
+    background: rgba(20, 20, 30, 0.85);
     border-radius: 8px;
+    box-shadow: 0 0 30px rgba(150, 0, 200, 0.3);
 }
-
-footer {
+.titulo {
     text-align: center;
-    margin-top: 40px;
-    color: #666;
-    font-size: 0.9em;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #cba6f7;
+}
+.page {
+    display: none;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.page.active {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover {
+    background-color: #8a2be2;
 }
