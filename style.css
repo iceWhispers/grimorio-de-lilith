@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #2a003f, #000000);
+  color: #e0caff;
+  font-family: 'UnifrakturCook', cursive;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+button {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  background: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #b400ff;
+}
+button:hover {
+  background: #500a91;
+}
