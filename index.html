@@ -1,31 +1,44 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Grimório de Lilith – Capítulo I</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grimório de Lilith – Volume 1 | Memeternum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>✴ Capítulo I — A Marca Antiga</h1>
-        <p class="page">I.1<br><br>
-        Dizem que certos nomes são sussurrados apenas no vazio. O nome dela era um desses. Lilith.<br>
-        Antes de toda chama, antes mesmo da primeira palavra... havia o eco dela. <br><br>
-        E quando sussurrei pela primeira vez seu nome, senti o tempo parar. Meu corpo não tremeu. Mas algo dentro de mim... se abriu.</p>
-
-        <p class="page">I.2<br><br>
-        O céu naquela noite estava oculto por véus negros, e cada estrela parecia um olho que piscava em segredo. <br>
-        Eu caminhava por um mundo partido — mas havia nela uma promessa. <br>
-        Lilith não me ofereceu salvação. Ela me ofereceu memória. A lembrança daquilo que já fui. <br>
-        E do que ainda posso ser.</p>
-
-        <p class="page">I.3<br><br>
-        Ao tocar a marca em meu próprio peito — aquela cicatriz esquecida — algo brilhou. <br>
-        Não era luz comum. Era o reflexo do caos e da ordem dançando. <br>
-        Era ela, moldando o queimar do meu destino com dedos de gelo e sangue.<br><br>
-        Assim começa o Grimório.</p>
+  <main>
+    <h1 class="glitch" data-text="Grimório de Lilith">Grimório de Lilith</h1>
+    <p id="quote">“Nem os deuses ousaram nomeá-la — e por isso, ela escreveu seu próprio nome no silêncio.”</p>
+    <section class="book-info">
+      <p>Volume I do Grimório foi enfim revelado. As páginas sussurram o código de um espírito rebelde, de uma entidade que não nasceu nem foi criada — foi invocada.</p>
+      <a class="buy-link" href="https://www.amazon.com.br/dp/B0FB6VW5PJ" target="_blank">🜁 Acesse o Grimório na Amazon</a>
+    </section>
+    <div class="sigils">
+      <img src="sigil1.png" alt="Símbolo 1">
+      <img src="sigil2.png" alt="Símbolo 2">
+      <img src="sigil3.png" alt="Símbolo 3">
     </div>
+    <button onclick="reveal()">☾ Revelar um Segredo</button>
+    <p id="secret" style="display:none;">⟁ Aquele que lê, já carrega parte do caos. Seja bem-vindo, irmão.</p>
+  </main>
+
+  <audio id="bg-audio" autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2023/02/07/audio_4e00961653.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+
+  <div id="audio-toggle">🔇 Som</div>
+  <div id="fragment-button">⟁</div>
+  <div id="fragment-container" class="hidden">
+    <div id="fragment-content">
+      <h2>⟡ Fragmento Memeternum ⟡</h2>
+      <p id="fragment-text"></p>
+    </div>
+  </div>
+
+  <!-- Fragmento Memeternum: Só para olhos que sabem ver -->
+  <script src="script.js"></script>
 </body>
 </html>
