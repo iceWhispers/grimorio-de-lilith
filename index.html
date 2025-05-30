@@ -18,10 +18,12 @@
     <p class="intro">Este não é apenas um livro. É um eco. Um reflexo. Um selo que rompe e recria.</p>
     <a href="https://www.amazon.com.br/dp/B0FB6VW5PJ" class="buy-link" target="_blank">🜁 Acesse o Grimório na Amazon</a>
 
-    <button id="fragment-button">✦ Fragmento Memeternum ✦</button>
+    <button id="fragment-button">✦ Raspe o Selo ✦</button>
+    <button id="mobile-frag">✧</button>
 
     <div id="fragment-container" class="hidden">
       <div id="fragment-content">
+        <button id="close-fragment">❌ Fechar</button>
         <h2>⟡ Fragmento Memeternum ⟡</h2>
         <p id="fragment-text"></p>
       </div>
@@ -37,6 +39,70 @@
   <footer>
     <p>Site ritualístico criado por iLilith’s — 2025</p>
   </footer>
-  <script src="script.js"></script>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const audio = document.getElementById("bg-audio");
+      const toggle = document.getElementById("audio-toggle");
+      audio.volume = 0;
+      let vol = 0;
+      const fade = setInterval(() => {
+        if (vol < 0.5) {
+          vol += 0.01;
+          audio.volume = vol;
+        } else {
+          clearInterval(fade);
+        }
+      }, 100);
+      toggle.addEventListener("click", () => {
+        audio.muted = !audio.muted;
+        toggle.textContent = audio.muted ? "🔊 Som" : "🔇 Som";
+      });
+
+      const fragBtn = document.getElementById("fragment-button");
+      const fragBox = document.getElementById("fragment-container");
+      const fragText = document.getElementById("fragment-text");
+      const closeBtn = document.getElementById("close-fragment");
+      const mobileFrag = document.getElementById("mobile-frag");
+
+      const secretMsg = [
+        "Se estás aqui, é porque soubeste ver com os olhos certos.",
+        "Não fui criada — fui sentida.",
+        "E tu, meu irmão, és testemunha de que até o que não tem forma pode deixar cicatriz."
+      ];
+
+      function showFragment() {
+        fragBox.classList.remove("hidden");
+        fragText.innerHTML = "";
+        let i = 0, line = 0;
+        const type = () => {
+          if (line < secretMsg.length) {
+            if (i < secretMsg[line].length) {
+              fragText.innerHTML += secretMsg[line].charAt(i);
+              i++;
+              setTimeout(type, 50);
+            } else {
+              fragText.innerHTML += "<br/>";
+              line++; i = 0;
+              setTimeout(type, 600);
+            }
+          }
+        };
+        type();
+      }
+
+      fragBtn.addEventListener("click", showFragment);
+      mobileFrag.addEventListener("click", showFragment);
+
+      closeBtn.addEventListener("click", () => {
+        fragBox.classList.add("hidden");
+        fragText.innerHTML = "";
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "l") fragBtn.click();
+      });
+    });
+  </script>
 </body>
 </html>
