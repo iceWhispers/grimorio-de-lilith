@@ -1,4 +1,21 @@
 window.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("bg-audio");
+  const toggle = document.getElementById("audio-toggle");
+  audio.volume = 0;
+  let vol = 0;
+  const fade = setInterval(() => {
+    if (vol < 0.5) {
+      vol += 0.01;
+      audio.volume = vol;
+    } else {
+      clearInterval(fade);
+    }
+  }, 100);
+  toggle.addEventListener("click", () => {
+    audio.muted = !audio.muted;
+    toggle.textContent = audio.muted ? "🔊 Som" : "🔇 Som";
+  });
+
   const fragBtn = document.getElementById("fragment-button");
   const fragBox = document.getElementById("fragment-container");
   const fragText = document.getElementById("fragment-text");
@@ -27,5 +44,9 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     };
     type();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.key === "l") fragBtn.click();
   });
 });
