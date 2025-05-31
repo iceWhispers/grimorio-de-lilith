@@ -17,13 +17,14 @@
   text-shadow: 0 0 5px #a855f7;
 }
 body {
-  background: radial-gradient(ellipse at top, #1a001f, #000000 90%);
-  background-attachment: fixed;
+  background: url('background-fluido.jpg') no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed;
   color: #ffffff;
   font-family: 'Cinzel Decorative', serif;
   overflow-x: hidden;
 }
+
 .language-links {
   margin-top: 20px;
   text-align: center;
