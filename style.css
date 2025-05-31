@@ -1,124 +1,18 @@
-body {
-  background: radial-gradient(ellipse at center, #0f0f0f 0%, #000000 100%);
-  color: #f5ccff;
-  font-family: 'Cinzel Decorative', cursive;
-  padding: 20px;
-  margin: 0;
-}
-
-h1 {
-  font-family: 'UnifrakturCook', cursive;
-  font-size: 3rem;
+.language-links {
+  margin-top: 20px;
   text-align: center;
-  margin-bottom: 0.5em;
 }
 
-.intro {
-  font-size: 1.3rem;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-.invocation {
-  font-size: 1.6rem;
-  text-align: center;
-  color: #fff3b0;
-}
-
-.buy-link {
+.language-links a {
   display: block;
-  text-align: center;
-  margin: 1.5em auto;
-  background: #fff3b0;
-  color: #1c1c1c;
-  padding: 12px 24px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  max-width: 320px;
-}
-
-#fragment-button {
-  display: block;
-  margin: 20px auto;
-  background: transparent;
-  color: #f5ccff;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border: 2px solid #f5ccff;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#mobile-frag {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #2b0f3f;
-  border: 2px solid #f5ccff;
-  color: #f5ccff;
-  padding: 12px 18px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  cursor: pointer;
-  box-shadow: 0 0 10px #ff66cc;
-  z-index: 999;
-}
-
-@media (max-width: 768px) {
-  #fragment-button {
-    display: none;
-  }
-  #mobile-frag {
-    display: block;
-  }
-}
-
-#fragment-container {
-  position: fixed;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  background: rgba(15, 0, 25, 0.96);
-  color: #f5ccff;
-  padding: 20px;
-  border-radius: 12px;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#fragment-container.hidden {
-  display: none;
-}
-
-#close-fragment {
-  align-self: flex-end;
-  background: transparent;
-  border: none;
-  color: #f5ccff;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-#audio-toggle {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  background: #1c1c1c;
-  color: #fff3b0;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
+  margin: 10px auto;
   font-size: 1.1rem;
-  z-index: 900;
+  color: #d8b4fe;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-footer {
-  margin-top: 60px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #aaaaaa;
+.language-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #a855f7;
 }
