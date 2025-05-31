@@ -24,42 +24,5 @@ body {
   font-family: 'Cinzel Decorative', serif;
   overflow-x: hidden;
 }
-
-.language-links {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.language-links a {
-  display: block;
-  margin: 10px auto;
-  font-size: 1.1rem;
-  color: #d8b4fe;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.language-links a:hover {
-  color: #fff;
-  text-shadow: 0 0 5px #a855f7;
-}
-body {
-  background: radial-gradient(ellipse at top, #1a001f, #000000 90%);
-  background-attachment: fixed;
-  background-size: cover;
-  color: #ffffff;
-  font-family: 'Cinzel Decorative', serif;
-  overflow-x: hidden;
-}
-.aura {
-  box-shadow: 0 0 60px #a855f7;
-  border-radius: 10px;
-  padding: 1rem;
-  margin: 2rem auto;
-  max-width: 800px;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-  position: relative;
-}
 <body>
   <div class="fog-layer"></div>
