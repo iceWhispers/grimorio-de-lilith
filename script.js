@@ -40,7 +40,7 @@ era o limiar entre mundos.
 Onde os mortos escutam,
 e os vivos fingem não ouvir.
 
-A morte danÃ§a, sim.
+A morte é danó-§a, sim.
 Mas nem todos tem olhos para vê-la.
 E eu, agora, danço com ela.
 Não como vítima, mas como parceira.
