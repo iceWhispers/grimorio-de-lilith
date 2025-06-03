@@ -1,8 +1,16 @@
+
+body {
+  background: url('background-fluido.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Cinzel Decorative', serif;
+  overflow-x: hidden;
+}
 .language-links {
   margin-top: 20px;
   text-align: center;
 }
-
 .language-links a {
   display: block;
   margin: 10px auto;
@@ -11,16 +19,52 @@
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
 .language-links a:hover {
   color: #fff;
   text-shadow: 0 0 5px #a855f7;
 }
-body {
-  background: url('background-fluido.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #ffffff;
+#veil-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #a855f7;
+  color: #d8b4fe;
+  font-size: 1rem;
+  padding: 10px 15px;
   font-family: 'Cinzel Decorative', serif;
-  overflow-x: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+#veil-button:hover {
+  background: #a855f7;
+  color: white;
+  text-shadow: 0 0 6px #fff;
+}
+.hidden-chapter {
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  overflow-y: scroll;
+  background: rgba(20, 10, 30, 0.95);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #a855f7;
+  font-size: 1rem;
+  z-index: 999;
+}
+.close-chapter {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
 }
