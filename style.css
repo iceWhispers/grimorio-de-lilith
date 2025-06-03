@@ -1,3 +1,4 @@
+
 body {
   background: url('background-fluido.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -57,15 +58,23 @@ body {
   left: 5%;
   width: 90%;
   height: 90%;
-  overflow-y: scroll;
-  background: rgba(20, 10, 30, 0.96);
+  overflow-y: auto;
+  background: rgba(10, 5, 20, 0.96);
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 0 20px #a855f7;
+  box-shadow: 0 0 30px #a855f7;
   font-size: 1.05rem;
   line-height: 1.6;
   z-index: 999;
-  transition: opacity 0.5s ease;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.veil-content {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 1.1rem;
+  white-space: normal;
+  line-height: 1.8;
+  padding-right: 10px;
 }
 
 .close-chapter {
@@ -79,7 +88,7 @@ body {
   cursor: pointer;
 }
 
-p {
-  margin-bottom: 1em;
-  text-align: justify;
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
 }
