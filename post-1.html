@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manifesto de abertura — Blog</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Grimório de Lilith<span class="dot">•</span></a>
+  <nav class="nav">
+    <a href="https://memeternum.com" target="_blank" rel="noopener">memeternum.com</a>
+    <a href="shop.html">Loja</a>
+    <a class="active" href="blog.html">Blog</a>
+    <a href="#" id="cartButton" aria-label="Abrir carrinho">🛒 <span id="cartCount">0</span></a>
+  </nav>
+</header>
+
+<main class="shell narrow">
+  <article class="post-full">
+    <h1>manifesto de abertura</h1>
+    <p class="muted">publicado hoje</p>
+    <p>escrever é virar o rosto pra sombra e dizer: “eu vejo você”. não para vencê-la, mas para caminhar ao lado — até que o gelo derreta.</p>
+    <p>este blog é o sussurro entre páginas do <em>Grimório de Lilith</em> e os <strong>Contos de Lilith</strong>. aqui, o corpo pensa, a mente sente, e a sanidade aprende a respirar.</p>
+    <blockquote>“a imaginação frequentemente nos leva a mundos que nunca existiram. mas sem ela, não vamos a lugar algum.” — carl sagan</blockquote>
+    <p>que seja nosso refúgio e nosso risco.</p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="shell" style="text-align:center;margin-bottom:8px">
+<img src="assets/pix-qr.png" alt="QR Pix" style="max-width:180px;display:block;margin:0 auto 12px"><button class="btn primary" data-donate>doar via Pix</button> <small class="muted">chave: 16997677500</small></div>
+<p class="copy">© <span id="year"></span> Soneca — Grimório de Lilith.</p>
+</footer>
+
+<div id="cartPanel" class="cart-panel" aria-hidden="true">
+  <div class="cart-content" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="cart-head">
+      <h3 id="cartTitle">Seu carrinho</h3>
+      <button id="closeCart" class="icon-btn" aria-label="Fechar">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-foot">
+      <img id="pixQrCart" src="assets/pix-qr.png" alt="QR Pix" style="max-width:120px;display:block;margin:0 auto 10px">
+      <div class="cart-total">Total: R$ <span id="cartTotal">0,00</span></div>
+      <div class="cart-actions">
+        <button id="donateBtnCart" class="btn">doar via Pix</button>
+        <button id="clearCart" class="btn">limpar</button>
+        <a id="checkoutBtn" class="btn primary" href="#">checkout</a>
+      </div>
+      <small class="muted">o checkout abre um e‑mail com o resumo do pedido (pode trocar depois por link de pagamento).</small>
+    </div>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog — Grimório de Lilith</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Grimório de Lilith<span class="dot">•</span></a>
+  <nav class="nav">
+    <a href="https://memeternum.com" target="_blank" rel="noopener">memeternum.com</a>
+    <a href="shop.html">Loja</a>
+    <a class="active" href="blog.html">Blog</a>
+    <a href="#" id="cartButton" aria-label="Abrir carrinho">🛒 <span id="cartCount">0</span></a>
+  </nav>
+</header>
+
+<main class="shell">
+  <h1>blog</h1>
+  <div class="grid two">
+    <article class="card post">
+      <a href="post-1.html">
+        <div class="tag">manifesto</div>
+        <h3>manifesto de abertura</h3>
+        <p>por que escrevemos no escuro? notas sobre corpo, sanidade e beleza.</p>
+        <span class="read-more">ler →</span>
+      </a>
+    </article>
+
+    <article class="card post">
+      <a href="post-2.html">
+        <div class="tag">processo</div>
+        <h3>diário do ato I</h3>
+        <p>entre neve e silêncio: bastidores do Contos de Lilith.</p>
+        <span class="read-more">ler →</span>
+      </a>
+    </article>
+  
+    <article class="card post">
+      <a href="poema-abba.html">
+        <div class="tag">poema</div>
+        <h3>poema — “Abba”</h3>
+        <p>luz em disputa, mente afiada: um coração de armadura.</p>
+        <span class="read-more">ver arte →</span>
+      </a>
+    </article>
+
+    <article class="card post">
+      <a href="descanse-em-paz.html">
+        <div class="tag">poema</div>
+        <h3>poema — “Descanse em Paz”</h3>
+        <p>um acalanto: não é fraqueza ser maré.</p>
+        <span class="read-more">ver arte →</span>
+      </a>
+    </article>
+    
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="shell" style="text-align:center;margin-bottom:8px">
+<img src="assets/pix-qr.png" alt="QR Pix" style="max-width:180px;display:block;margin:0 auto 12px"><button class="btn primary" data-donate>doar via Pix</button> <small class="muted">chave: 16997677500</small></div>
+<p class="copy">© <span id="year"></span> Soneca — Grimório de Lilith.</p>
+</footer>
+
+<div id="cartPanel" class="cart-panel" aria-hidden="true">
+  <div class="cart-content" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="cart-head">
+      <h3 id="cartTitle">Seu carrinho</h3>
+      <button id="closeCart" class="icon-btn" aria-label="Fechar">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-foot">
+      <img id="pixQrCart" src="assets/pix-qr.png" alt="QR Pix" style="max-width:120px;display:block;margin:0 auto 10px">
+      <div class="cart-total">Total: R$ <span id="cartTotal">0,00</span></div>
+      <div class="cart-actions">
+        <button id="donateBtnCart" class="btn">doar via Pix</button>
+        <button id="clearCart" class="btn">limpar</button>
+        <a id="checkoutBtn" class="btn primary" href="#">checkout</a>
+      </div>
+      <small class="muted">o checkout abre um e‑mail com o resumo do pedido (pode trocar depois por link de pagamento).</small>
+    </div>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
