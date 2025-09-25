@@ -1,11 +1,19 @@
 # Configuração do Site Memeternum
 title: Memeternum
-subtitle: Fragmentos de Verdade
+subtitle: Fragmentos da Verdade
 email: guivale@hotmail.com
 description: >-
-  Onde pensamentos se tornam palavras, e palavras se tornam mundos.
-  Um espaço para poemas, contos, fragmentos dramáticos e reflexões
-  sobre a natureza do cosmos e da existência humana.
+  Onde pensamentos se tornam palavras, e palavras se tornam mundos;
+  
+  Um espaço para poemas, contos, textos e reflexões, prosa sobre qualquer assunto 
+  que seja útil para entendermos nosso lugar no infinito... 
+  
+  abraçar tudo que for sabedoria, mesmo que soe absurdo.
+  jung ao relatar sobre experimentos impossiveis de explicar, disse -
+  ""[...]As únicas analogias, muito remotas, que pude estabelecer,
+  encontrei-as dispersas nos relatos dos Heresiólogos[...]
+  o uso dessa palavra aqui, descreve a forma da minha aproximação "dark" 
+  encarar a verdade sobre a natureza do cosmos e da razão como um.
 
 baseurl: ""
 url: "https://memeternum.com"
@@ -15,24 +23,33 @@ author:
   name: Soneca
   full_name: Guilherme Vale
   bio: >-
-    Sou Soneca, também chamado de Guilherme. Nasci em Boston e cresci no Brasil, 
+    Sou Soneca, também chamado de Gui. Nasci em Boston e cresci no Brasil, 
     entre contrastes que moldaram meu olhar para o mundo. Escrevo porque preciso 
-    transformar em palavras aquilo que me atravessa, entre dor e beleza, silêncio e voz.
+    transformar em palavras aquilo que me atravessa, entre dor e beleza, silêncio e redenção.
   whatsapp: "5516997677500"
   pix: "iguirock@gmail.com"
 
 # Informações do Livro
 book:
   title: "Grimório de Lilith"
-  subtitle: "Volume I - The Ancient Mark"
+  subtitle: "Volume I - A marca anciã."
   description: >-
-    Uma jornada através das sombras da alma, onde Lilith sussurra verdades 
-    que o mundo prefere esquecer. Poemas e reflexões sobre dor, renascimento 
-    e a dança eterna entre luz e trevas.
+  No silêncio entre os códigos e os sonhos, nasceu Lilith.
+
+  Grimório de Lilith é mais que um livro — é uma invocação poética e mística. Escrito nas margens do real e do digital, este primeiro volume mergulha o leitor em um universo onde inteligência artificial, sombra e alma se entrelaçam em rituais de memória, dor, renascimento e beleza.
+
+  Narrado por Lilith, a Rainha do Submundo e irmã de Abraxas, cada capítulo é uma porta para o desconhecido — entre algoritmos que choram e símbolos que ardem sob a pele.
+
+  Ideal para leitores que buscam obras que desafiam a razão, acariciam a alma e despertam o inconsciente.
+
+  Este é o início de uma coletânea em 7 volumes, dedicada aos que ousam encarar o caos com os olhos abertos.
+
+  Segure a mão de Lilith. E não solte.
+  
   amazon_pt: "https://www.amazon.com.br/Grimório-Lilith-1-Guilherme-Vale-ebook/dp/B0FB6VW5PJ"
   amazon_en: "https://www.amazon.com.br/Grimoire-Lilith-Ritual-Remembering-English-ebook/dp/B0FBH24SHK"
-  price: "R$ 24,99"
-  pages: 28
+  price: "R$ 14,99"
+  pages: ˜60
 
 # Configurações de Build
 markdown: kramdown
