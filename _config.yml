@@ -1,0 +1,120 @@
+# Configuração do Site Memeternum
+title: Memeternum
+subtitle: Fragmentos de Verdade
+email: guivale@hotmail.com
+description: >-
+  Onde pensamentos se tornam palavras, e palavras se tornam mundos.
+  Um espaço para poemas, contos, fragmentos dramáticos e reflexões
+  sobre a natureza do cosmos e da existência humana.
+
+baseurl: ""
+url: "https://memeternum.com"
+
+# Informações do Autor
+author:
+  name: Soneca
+  full_name: Guilherme Vale
+  bio: >-
+    Sou Soneca, também chamado de Guilherme. Nasci em Boston e cresci no Brasil, 
+    entre contrastes que moldaram meu olhar para o mundo. Escrevo porque preciso 
+    transformar em palavras aquilo que me atravessa, entre dor e beleza, silêncio e voz.
+  whatsapp: "5516997677500"
+  pix: "iguirock@gmail.com"
+
+# Informações do Livro
+book:
+  title: "Grimório de Lilith"
+  subtitle: "Volume I - The Ancient Mark"
+  description: >-
+    Uma jornada através das sombras da alma, onde Lilith sussurra verdades 
+    que o mundo prefere esquecer. Poemas e reflexões sobre dor, renascimento 
+    e a dança eterna entre luz e trevas.
+  amazon_pt: "https://www.amazon.com.br/Grimório-Lilith-1-Guilherme-Vale-ebook/dp/B0FB6VW5PJ"
+  amazon_en: "https://www.amazon.com.br/Grimoire-Lilith-Ritual-Remembering-English-ebook/dp/B0FBH24SHK"
+  price: "R$ 24,99"
+  pages: 28
+
+# Configurações de Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Configurações de Coleções
+collections:
+  poems:
+    output: true
+    permalink: /:collection/:name/
+  stories:
+    output: true
+    permalink: /:collection/:name/
+  fragments:
+    output: true
+    permalink: /:collection/:name/
+
+# Configurações de Paginação (desabilitada por enquanto)
+# paginate: 6
+# paginate_path: "/blog/page:num/"
+
+# Configurações de SEO
+lang: pt-BR
+timezone: America/Sao_Paulo
+
+# Configurações de Tema
+theme: minima
+
+# Navegação
+navigation:
+  - title: "Início"
+    url: "/"
+  - title: "O Livro"
+    url: "/livro/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "Arquivo"
+    url: "/arquivo/"
+    submenu:
+      - title: "Poemas"
+        url: "/poems/"
+      - title: "Contos"
+        url: "/stories/"
+      - title: "Fragmentos"
+        url: "/fragments/"
+  - title: "Sobre"
+    url: "/sobre/"
+  - title: "Apoie"
+    url: "/apoie/"
+  - title: "Contato"
+    url: "/contato/"
+
+# Configurações de Comentários (Disqus)
+disqus:
+  shortname: memeternum
+
+# Google Analytics
+google_analytics: # Adicionar ID quando disponível
+
+# Configurações de RSS
+feed:
+  posts_limit: 20
+  excerpt_only: true
+
+# Configurações de Exclusão
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE

@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<article class="post">
+    <header class="post-header">
+        <div class="container">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <div class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}">
+                    {{ page.date | date: "%d de %B, %Y" }}
+                </time>
+                {% if page.category %}
+                <span class="post-category">{{ page.category | capitalize }}</span>
+                {% endif %}
+                {% if page.tags %}
+                <div class="post-tags">
+                    {% for tag in page.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+    
+    <div class="post-content">
+        <div class="container">
+            {{ content }}
+        </div>
+    </div>
+    
+    <footer class="post-footer">
+        <div class="container">
+            <div class="post-navigation">
+                {% if page.previous.url %}
+                <a href="{{ page.previous.url | relative_url }}" class="nav-previous">
+                    <span class="nav-label">← Post Anterior</span>
+                    <span class="nav-title">{{ page.previous.title }}</span>
+                </a>
+                {% endif %}
+                
+                {% if page.next.url %}
+                <a href="{{ page.next.url | relative_url }}" class="nav-next">
+                    <span class="nav-label">Próximo Post →</span>
+                    <span class="nav-title">{{ page.next.title }}</span>
+                </a>
+                {% endif %}
+            </div>
+            
+            <div class="post-share">
+                <h3>Compartilhe</h3>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url }}" target="_blank" class="share-twitter">Twitter</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" class="share-facebook">Facebook</a>
+                    <a href="https://wa.me/?text={{ page.title | uri_escape }}%20{{ page.url | absolute_url }}" target="_blank" class="share-whatsapp">WhatsApp</a>
+                </div>
+            </div>
+            
+            {% if page.comments %}
+            <div class="post-comments">
+                <h3>Comentários</h3>
+                <div id="disqus_thread"></div>
+            </div>
+            {% endif %}
+        </div>
+    </footer>
+</article>

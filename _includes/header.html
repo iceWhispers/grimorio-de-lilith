@@ -1,0 +1,47 @@
+<header class="site-header">
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="{{ '/' | relative_url }}" class="brand-link">
+                    <span class="brand-symbol">⚜</span>
+                    <span class="brand-text">{{ site.title }}</span>
+                </a>
+            </div>
+            
+            <button class="navbar-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="navbar-menu">
+                <ul class="navbar-nav">
+                    {% for item in site.navigation %}
+                    <li class="nav-item {% if item.submenu %}has-submenu{% endif %}">
+                        <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">
+                            {{ item.title }}
+                        </a>
+                        {% if item.submenu %}
+                        <ul class="submenu">
+                            {% for subitem in item.submenu %}
+                            <li class="submenu-item">
+                                <a href="{{ subitem.url | relative_url }}" class="submenu-link">
+                                    {{ subitem.title }}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                
+                <div class="navbar-actions">
+                    <a href="https://wa.me/{{ site.author.whatsapp }}" target="_blank" class="whatsapp-btn" title="Contato via WhatsApp">
+                        <span class="whatsapp-icon">📱</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

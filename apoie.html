@@ -1,0 +1,584 @@
+---
+layout: page
+title: Apoie Este Trabalho
+subtitle: Ajude a manter viva a arte da palavra
+---
+
+<div class="support-page">
+    <div class="support-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Apoie Este Trabalho</h1>
+                <p class="hero-subtitle">Cada palavra escrita é um ato de resistência, cada poema uma ponte entre almas</p>
+                
+                <div class="support-message">
+                    <p>Sou um artista independente e tudo o que você encontra aqui nasceu de noites longas, dúvidas, coragem e uma vontade imensa de transformar experiências em palavras.</p>
+                    
+                    <p>Escrever não é apenas um hobby: é o jeito que encontrei de me conectar, de dividir fragmentos de verdade e de criar mundos onde outros também possam se reconhecer.</p>
+                    
+                    <blockquote>
+                        "Se você acredita no valor disso e deseja apoiar, sua doação ajuda a manter esse espaço vivo — seja para custear tempo, energia ou até o simples café que acompanha cada página escrita."
+                    </blockquote>
+                    
+                    <p>Não é obrigação, é gesto de parceria. Cada contribuição, pequena ou grande, faz diferença e me dá forças para continuar.</p>
+                    
+                    <p><strong>Obrigado por caminhar comigo.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="support-methods">
+        <div class="container">
+            <h2>Como Apoiar</h2>
+            
+            <div class="methods-grid">
+                <div class="method-card primary">
+                    <div class="method-icon">💰</div>
+                    <h3>PIX</h3>
+                    <p>A forma mais direta e rápida de apoiar</p>
+                    
+                    <div class="pix-info">
+                        <div class="pix-key">
+                            <label>Chave PIX:</label>
+                            <div class="key-display">
+                                <code id="pix-key">{{ site.author.pix }}</code>
+                                <button class="copy-btn" onclick="copyPix()" title="Copiar chave PIX">📋</button>
+                            </div>
+                        </div>
+                        
+                        <div class="pix-instructions">
+                            <h4>Como fazer:</h4>
+                            <ol>
+                                <li>Abra o app do seu banco</li>
+                                <li>Escolha a opção PIX</li>
+                                <li>Cole a chave: <strong>{{ site.author.pix }}</strong></li>
+                                <li>Escolha o valor que desejar</li>
+                                <li>Confirme a transferência</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">🤝</div>
+                    <h3>Apoia.se</h3>
+                    <p>Apoio recorrente com benefícios exclusivos</p>
+                    
+                    <div class="apoiase-info">
+                        <p class="coming-soon">Em breve, você poderá me apoiar mensalmente através do Apoia.se e receber conteúdos exclusivos.</p>
+                        
+                        <div class="benefits-preview">
+                            <h4>Benefícios planejados:</h4>
+                            <ul>
+                                <li>Acesso antecipado a novos textos</li>
+                                <li>Versões comentadas dos poemas</li>
+                                <li>Participação em lives exclusivas</li>
+                                <li>Desconto em livros futuros</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-secondary" disabled>Em Breve</button>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">📚</div>
+                    <h3>Compre Meus Livros</h3>
+                    <p>Apoie adquirindo minhas obras</p>
+                    
+                    <div class="books-support">
+                        <div class="book-item">
+                            <img src="/assets/images/grimoire_lilith_capa.jpeg" alt="Grimório de Lilith" class="book-thumb">
+                            <div class="book-details">
+                                <h4>Grimório de Lilith</h4>
+                                <p>Volume I - R$ 24,99</p>
+                                <div class="book-links">
+                                    <a href="{{ site.book.amazon_pt }}" target="_blank" class="btn btn-primary btn-small">🇧🇷 Comprar</a>
+                                    <a href="{{ site.book.amazon_en }}" target="_blank" class="btn btn-primary btn-small">🇺🇸 Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="books-note">Cada compra me ajuda a continuar escrevendo e a investir em novos projetos.</p>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">💬</div>
+                    <h3>Compartilhe</h3>
+                    <p>Divulgue meu trabalho para outras pessoas</p>
+                    
+                    <div class="share-support">
+                        <p>Às vezes, o maior apoio é fazer com que mais pessoas conheçam o trabalho. Compartilhe:</p>
+                        
+                        <div class="share-buttons">
+                            <a href="https://wa.me/?text=Conheça%20o%20trabalho%20do%20Soneca%20em%20https://memeternum.com" target="_blank" class="share-btn whatsapp">
+                                📱 WhatsApp
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?text=Descobri%20um%20trabalho%20incrível%20de%20poesia%20e%20literatura%20mística&url=https://memeternum.com" target="_blank" class="share-btn twitter">
+                                🐦 Twitter
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://memeternum.com" target="_blank" class="share-btn facebook">
+                                📘 Facebook
+                            </a>
+                        </div>
+                        
+                        <p class="share-note">Cada compartilhamento ajuda a alcançar pessoas que podem se conectar com essas palavras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="support-impact">
+        <div class="container">
+            <h2>Como Seu Apoio Faz Diferença</h2>
+            
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <div class="impact-icon">⏰</div>
+                    <h3>Tempo para Escrever</h3>
+                    <p>Seu apoio me permite dedicar mais tempo à escrita, sem a pressão de outros trabalhos que me afastem da criação.</p>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">📖</div>
+                    <h3>Novos Projetos</h3>
+                    <p>Com estabilidade financeira, posso investir em novos livros, revisões profissionais e melhores edições.</p>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">🌐</div>
+                    <h3>Manutenção do Site</h3>
+                    <p>Manter este espaço online, com hospedagem, domínio e ferramentas que tornam a experiência melhor para você.</p>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">☕</div>
+                    <h3>Combustível Criativo</h3>
+                    <p>Sim, café é importante! Mas também livros, cursos e tudo que alimenta a inspiração e o conhecimento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="support-transparency">
+        <div class="container">
+            <h2>Transparência</h2>
+            
+            <div class="transparency-content">
+                <p>Acredito na transparência com quem me apoia. Aqui você pode acompanhar como os recursos são utilizados:</p>
+                
+                <div class="expenses-breakdown">
+                    <h3>Principais Gastos Mensais</h3>
+                    <div class="expense-list">
+                        <div class="expense-item">
+                            <span class="expense-category">Hospedagem e Domínio</span>
+                            <span class="expense-amount">~R$ 50/mês</span>
+                        </div>
+                        <div class="expense-item">
+                            <span class="expense-category">Ferramentas de Escrita</span>
+                            <span class="expense-amount">~R$ 80/mês</span>
+                        </div>
+                        <div class="expense-item">
+                            <span class="expense-category">Livros e Pesquisa</span>
+                            <span class="expense-amount">~R$ 150/mês</span>
+                        </div>
+                        <div class="expense-item">
+                            <span class="expense-category">Revisão e Edição</span>
+                            <span class="expense-amount">~R$ 300/livro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="goals">
+                    <h3>Metas de Apoio</h3>
+                    <div class="goal-item">
+                        <h4>R$ 500/mês</h4>
+                        <p>Cobrir custos básicos e dedicar mais tempo à escrita</p>
+                    </div>
+                    <div class="goal-item">
+                        <h4>R$ 1.000/mês</h4>
+                        <p>Investir em revisão profissional e novos projetos</p>
+                    </div>
+                    <div class="goal-item">
+                        <h4>R$ 2.000/mês</h4>
+                        <p>Dedicação integral à escrita e criação de conteúdo exclusivo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="support-gratitude">
+        <div class="container">
+            <h2>Gratidão</h2>
+            
+            <div class="gratitude-content">
+                <p>Cada pessoa que me apoia, seja com uma doação, uma compra, um compartilhamento ou simplesmente lendo meus textos, faz parte desta jornada.</p>
+                
+                <blockquote>
+                    "A arte só existe quando é compartilhada. Vocês não são apenas apoiadores, são co-criadores desta obra."
+                </blockquote>
+                
+                <p>Se você chegou até aqui e decidiu apoiar de alguma forma, saiba que sua contribuição vai muito além do valor monetário. Você está investindo na continuidade de uma voz, na preservação de uma forma de ver o mundo, na possibilidade de que mais pessoas encontrem nestas palavras um eco de suas próprias experiências.</p>
+                
+                <div class="contact-support">
+                    <h3>Quer Conversar?</h3>
+                    <p>Se você tem dúvidas sobre como apoiar, sugestões ou simplesmente quer conversar sobre o trabalho:</p>
+                    
+                    <div class="contact-buttons">
+                        <a href="https://wa.me/{{ site.author.whatsapp }}" target="_blank" class="btn btn-primary">
+                            📱 WhatsApp
+                        </a>
+                        <a href="mailto:{{ site.email }}" class="btn btn-secondary">
+                            📧 Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.support-hero {
+    background: linear-gradient(135deg, var(--color-black) 0%, var(--color-gray-dark) 100%);
+    padding: var(--spacing-xxl) 0;
+    text-align: center;
+}
+
+.support-message {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.support-methods,
+.support-impact,
+.support-transparency,
+.support-gratitude {
+    padding: var(--spacing-xxl) 0;
+}
+
+.support-impact {
+    background-color: var(--color-gray-dark);
+}
+
+.support-gratitude {
+    background-color: var(--color-gray-dark);
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.method-card {
+    background-color: var(--color-gray-dark);
+    border: 1px solid var(--color-gray-medium);
+    border-radius: 15px;
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.method-card.primary {
+    border-color: var(--color-gold);
+    background: linear-gradient(135deg, var(--color-gray-dark) 0%, rgba(212, 175, 55, 0.1) 100%);
+}
+
+.method-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.method-card h3 {
+    color: var(--color-gold);
+    margin-bottom: var(--spacing-md);
+}
+
+.pix-key {
+    margin: var(--spacing-lg) 0;
+}
+
+.pix-key label {
+    display: block;
+    color: var(--color-purple-light);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+}
+
+.key-display {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    justify-content: center;
+}
+
+#pix-key {
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    border: 1px solid var(--color-gold);
+}
+
+.copy-btn {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border: none;
+    padding: var(--spacing-sm);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.copy-btn:hover {
+    background-color: var(--color-gold-light);
+    transform: scale(1.1);
+}
+
+.pix-instructions {
+    text-align: left;
+    margin-top: var(--spacing-lg);
+}
+
+.pix-instructions h4 {
+    color: var(--color-purple-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.pix-instructions ol {
+    color: var(--color-white);
+    padding-left: var(--spacing-lg);
+}
+
+.pix-instructions li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.coming-soon {
+    color: var(--color-purple-light);
+    font-style: italic;
+    margin-bottom: var(--spacing-lg);
+}
+
+.benefits-preview h4 {
+    color: var(--color-gold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.benefits-preview ul {
+    text-align: left;
+    color: var(--color-white);
+}
+
+.book-item {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.book-thumb {
+    width: 60px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-details h4 {
+    color: var(--color-gold);
+    margin-bottom: var(--spacing-xs);
+}
+
+.book-links {
+    display: flex;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
+}
+
+.btn-small {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.9rem;
+}
+
+.books-note {
+    font-size: 0.9rem;
+    color: var(--color-purple-light);
+    font-style: italic;
+}
+
+.share-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    margin: var(--spacing-lg) 0;
+}
+
+.share-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 25px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.share-btn:hover {
+    background-color: var(--color-purple-light);
+    transform: scale(1.05);
+}
+
+.share-note {
+    font-size: 0.9rem;
+    color: var(--color-purple-light);
+    font-style: italic;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.impact-item {
+    text-align: center;
+    background-color: var(--color-black);
+    border: 1px solid var(--color-gray-medium);
+    border-radius: 10px;
+    padding: var(--spacing-xl);
+}
+
+.impact-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.impact-item h3 {
+    color: var(--color-gold);
+    margin-bottom: var(--spacing-md);
+}
+
+.expenses-breakdown {
+    margin-bottom: var(--spacing-xl);
+}
+
+.expense-list {
+    background-color: var(--color-gray-dark);
+    border-radius: 10px;
+    padding: var(--spacing-lg);
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-gray-medium);
+}
+
+.expense-item:last-child {
+    border-bottom: none;
+}
+
+.expense-category {
+    color: var(--color-white);
+}
+
+.expense-amount {
+    color: var(--color-gold);
+    font-weight: 500;
+}
+
+.goals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.goal-item {
+    background-color: var(--color-gray-dark);
+    border: 1px solid var(--color-purple-light);
+    border-radius: 10px;
+    padding: var(--spacing-lg);
+    text-align: center;
+}
+
+.goal-item h4 {
+    color: var(--color-gold);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-support {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--color-gray-medium);
+}
+
+.contact-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-top: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+    .methods-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .key-display {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .book-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .share-buttons {
+        flex-direction: column;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+    }
+    
+    .goals {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<script>
+function copyPix() {
+    const pixKey = document.getElementById('pix-key').textContent;
+    navigator.clipboard.writeText(pixKey).then(function() {
+        const btn = document.querySelector('.copy-btn');
+        const originalText = btn.textContent;
+        btn.textContent = '✓';
+        btn.style.backgroundColor = 'var(--color-gold-light)';
+        
+        setTimeout(function() {
+            btn.textContent = originalText;
+            btn.style.backgroundColor = 'var(--color-gold)';
+        }, 2000);
+    }).catch(function(err) {
+        console.error('Erro ao copiar: ', err);
+        alert('Chave PIX: ' + pixKey);
+    });
+}
+</script>
