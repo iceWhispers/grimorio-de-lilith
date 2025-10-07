@@ -1,0 +1,324 @@
+/*
+ * Memeternum 2.0 – Darkside theme
+ *
+ * This stylesheet defines the dark, occult-inspired look for the new
+ * Memeternum website. It uses a rich palette of blacks, golds, purples
+ * and magentas along with clean typography from Google Fonts. Each
+ * section is styled with generous spacing and subtle transitions to
+ * create an immersive reading experience.
+ */
+
+/* CSS Variables for easy colour management */
+:root {
+  --color-bg: #0b0b0f;
+  --color-card: #15151d;
+  --color-text: #e0e0e5;
+  --color-primary: #c9a227; /* gold */
+  --color-secondary: #8a2be2; /* purple */
+  --color-tertiary: #ff2e63; /* magenta */
+  --color-accent: #00e5ff; /* cyan */
+  --color-muted: #32323c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cinzel', serif;
+  color: var(--color-primary);
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin-bottom: 1.2em;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-tertiary);
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-card);
+  padding: 0.8rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.nav-brand {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+  border-bottom-color: var(--color-tertiary);
+}
+
+/* Active link styling */
+.nav-links a.active {
+  border-bottom-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(11,11,15,1) 0%, rgba(50,15,60,1) 100%);
+  position: relative;
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin-bottom: 2rem;
+  color: var(--color-text);
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-tertiary);
+  color: var(--color-bg);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-tertiary);
+  color: var(--color-bg);
+}
+
+/* Section generic styles */
+.section {
+  padding: 4rem 2rem;
+  background-color: var(--color-bg);
+}
+
+.section.dark {
+  background-color: var(--color-card);
+}
+
+.section-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--color-card);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  color: var(--color-primary);
+}
+
+.card-body p {
+  margin-bottom: 0;
+  color: var(--color-text);
+}
+
+/* Gallery grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.gallery-grid img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--color-primary);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.08);
+}
+
+.gallery-grid figcaption {
+  margin-top: 0.3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-secondary);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-card);
+  padding: 2rem;
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+footer .footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer h4 {
+  font-family: 'Cinzel', serif;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  margin-bottom: 0.4rem;
+}
+
+footer a {
+  color: var(--color-secondary);
+}
+
+footer a:hover {
+  color: var(--color-tertiary);
+}
+
+/* Newsletter form */
+.newsletter {
+  margin-top: 1.5rem;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 0.6rem;
+  margin-right: 0.5rem;
+  border: 1px solid var(--color-muted);
+  background-color: var(--color-muted);
+  color: var(--color-text);
+  border-radius: 4px;
+}
+
+.newsletter input[type="submit"] {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter input[type="submit"]:hover {
+  background-color: var(--color-tertiary);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  nav {
+    padding: 0.6rem 1rem;
+  }
+}
