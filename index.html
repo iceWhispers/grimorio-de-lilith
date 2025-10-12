@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memeternum | Fragmentos de Verdade entre Sombras e Luz</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Blog de Soneca (Guilherme Vale): poesia dark, horror literário filosófico e reflexões sobre dor, renascimento e a dança eterna entre luz e trevas. Grimório de Lilith disponível.">
+    <meta name="keywords" content="poesia dark, horror literário, filosofia existencial, Lilith, contos góticos, literatura brasileira, Soneca, Guilherme Vale">
+    <meta name="author" content="Soneca (Guilherme Vale)">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Memeternum | Fragmentos de Verdade">
+    <meta property="og:description" content="Onde pensamentos se tornam palavras, e palavras se tornam mundos. Poesia, horror e filosofia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://memeternum.com/">
+    <meta property="og:site_name" content="Memeternum">
+    <meta property="og:image" content="https://memeternum.com/assets/images/grimoire_lilith_capa.jpeg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol rune-pulse">⚜</span>
+                <span class="logo-text">Memeternum</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Início</a></li>
+                <li><a href="livro.html" class="nav-link">O Grimório</a></li>
+                <li><a href="blog.html" class="nav-link">Devaneios</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="apoie.html" class="nav-link">Apoie</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+            
+            <a href="https://wa.me/5516997677500" target="_blank" class="whatsapp-btn" title="WhatsApp">
+                <span>📱</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="runes-decoration">
+                    <span class="rune">ᚠ</span>
+                    <span class="rune">ᚢ</span>
+                    <span class="rune">ᚦ</span>
+                    <span class="rune">ᚨ</span>
+                    <span class="rune">ᚱ</span>
+                </div>
+                
+                <h1 class="hero-title glitch" data-text="Fragmentos de Verdade">
+                    Fragmentos de Verdade
+                </h1>
+                
+                <p class="hero-subtitle typewriter" id="heroSubtitle"></p>
+                
+                <div class="hero-quote">
+                    <div class="quote-container">
+                        <p class="quote-text" id="rotatingQuote"></p>
+                        <p class="quote-author" id="quoteAuthor"></p>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="livro.html" class="btn btn-primary pulse-glow">
+                        <span class="btn-icon">📖</span>
+                        Conheça o Grimório
+                    </a>
+                    <a href="blog.html" class="btn btn-secondary">
+                        <span class="btn-icon">✨</span>
+                        Leia os Devaneios
+                    </a>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <span class="scroll-text">Role para descobrir</span>
+                    <span class="scroll-arrow">↓</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Poem Section -->
+    <section class="section featured-poem">
+        <div class="container">
+            <div class="poem-card mystical-border">
+                <div class="heart-symbol">🖤</div>
+                <h2 class="poem-title fade-in">Descanse em Paz</h2>
+                <p class="poem-author">por Lilith</p>
+                <div class="poem-text">
+                    <p class="verse fade-in-up" style="animation-delay: 0.2s;">
+                        quando tudo dói, o mundo cala,<br>
+                        e a alma chora atrás do olhar...
+                    </p>
+                    <p class="verse fade-in-up" style="animation-delay: 0.4s;">
+                        mas mesmo a dor mais funda embala<br>
+                        quem se permite repousar.
+                    </p>
+                    <p class="verse fade-in-up" style="animation-delay: 0.6s;">
+                        no quarto escuro da tristeza,<br>
+                        onde os suspiros viram véu,
+                    </p>
+                    <p class="verse fade-in-up" style="animation-delay: 0.8s;">
+                        há uma centelha de beleza<br>
+                        caindo lenta do céu.
+                    </p>
+                    <p class="poem-signature fade-in-up" style="animation-delay: 1s;">— Lilith</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Author Section -->
+    <section class="section about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-symbol">⚜</span>
+                Sobre o Autor
+                <span class="title-symbol">⚜</span>
+            </h2>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead">Sou <strong>Soneca</strong>, também chamado de Guilherme. Nasci em Boston e cresci no Brasil, entre contrastes que moldaram meu olhar para o mundo.</p>
+                    
+                    <p>Escrevo porque preciso transformar em palavras aquilo que me atravessa, entre dor e beleza, silêncio e voz. Minhas páginas não são sobre perfeição, mas sobre verdade.</p>
+                    
+                    <p>São fragmentos de memórias, símbolos e ecos que encontram sentido apenas quando partilhados. Acredito que cada texto é um rito, um espelho que devolve segredos a quem ousa atravessá-lo.</p>
+                    
+                    <blockquote class="author-quote">
+                        <span class="quote-mark">"</span>
+                        Até que o gelo derreta.
+                        <span class="quote-mark">"</span>
+                        <footer>— Soneca</footer>
+                    </blockquote>
+                    
+                    <div class="author-stats">
+                        <div class="stat-card">
+                            <div class="stat-number counter" data-target="2">0</div>
+                            <div class="stat-label">Livros Publicados</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Devaneios</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number counter" data-target="1000">0</div>
+                            <div class="stat-label">Leitores</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="author-card mystical-glow">
+                        <div class="card-inner">
+                            <div class="author-avatar">
+                                <span class="avatar-symbol rotating">⚜</span>
+                            </div>
+                            <h3 class="author-name">Soneca</h3>
+                            <p class="author-title">Escritor • Poeta • Guardião de Sombras</p>
+                            <div class="author-runes">
+                                <span class="rune-small">ᛋ</span>
+                                <span class="rune-small">ᛟ</span>
+                                <span class="rune-small">ᚾ</span>
+                                <span class="rune-small">ᛖ</span>
+                                <span class="rune-small">ᚲ</span>
+                                <span class="rune-small">ᚨ</span>
+                            </div>
+                            <a href="sobre.html" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grimório Section -->
+    <section class="section grimorio-section">
+        <div class="section-bg-pattern"></div>
+        <div class="container">
+            <h2 class="section-title glow-text">
+                <span class="alchemical-symbol">🜃</span>
+                Grimório de Lilith
+                <span class="alchemical-symbol">🜁</span>
+            </h2>
+            
+            <div class="grimorio-grid">
+                <div class="book-visual">
+                    <div class="book-cover-wrapper">
+                        <img src="assets/images/grimoire_lilith_capa.jpeg" alt="Grimório de Lilith" class="book-cover floating">
+                        <div class="book-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="book-info">
+                    <h3 class="book-title">Volume I: The Ancient Mark</h3>
+                    <div class="book-subtitle">O Ritual do Lembrar</div>
+                    
+                    <p class="book-description">
+                        Uma jornada através das sombras da alma, onde Lilith sussurra verdades que o mundo prefere esquecer. Poemas e reflexões sobre dor, renascimento e a dança eterna entre luz e trevas.
+                    </p>
+                    
+                    <div class="book-features">
+                        <div class="feature">
+                            <span class="feature-icon">📖</span>
+                            <span class="feature-text">Poesia Dark & Filosófica</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🌙</span>
+                            <span class="feature-text">Simbolismo Alquímico</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🔮</span>
+                            <span class="feature-text">Jornada de Transformação</span>
+                        </div>
+                    </div>
+                    
+                    <div class="book-actions">
+                        <a href="https://www.amazon.com.br/Grimório-Lilith-1-Guilherme-Vale-ebook/dp/B0FB6VW5PJ" target="_blank" class="btn btn-primary btn-large">
+                            <span class="btn-icon">🇧🇷</span>
+                            Comprar Versão PT
+                        </a>
+                        <a href="https://www.amazon.com.br/Grimoire-Lilith-Ritual-Remembering-English-ebook/dp/B0FBH24SHK" target="_blank" class="btn btn-secondary btn-large">
+                            <span class="btn-icon">🇺🇸</span>
+                            Buy English Version
+                        </a>
+                    </div>
+                    
+                    <div class="book-contact">
+                        <p class="contact-text">Dúvidas sobre o livro?</p>
+                        <a href="https://wa.me/5516997677500" target="_blank" class="whatsapp-link-large">
+                            <span class="whatsapp-icon">📱</span>
+                            <span class="whatsapp-text">Fale comigo no WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Posts Section -->
+    <section class="section posts-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-symbol">✨</span>
+                Últimos Devaneios
+                <span class="title-symbol">✨</span>
+            </h2>
+            
+            <div class="posts-grid">
+                <!-- Post Card 1 -->
+                <article class="post-card hover-lift">
+                    <div class="post-category">Fragmento</div>
+                    <h3 class="post-title">
+                        <a href="post-espelhos.html">Espelhos que Mentem com Classe</a>
+                    </h3>
+                    <div class="post-meta">
+                        <time datetime="2024-09-25">25 de Setembro, 2024</time>
+                        <span class="post-reading-time">• 5 min</span>
+                    </div>
+                    <p class="post-excerpt">
+                        Ora, veja só quem quer saber quem é. Você olha pro teto branco e pergunta se ainda é você mesmo, como se a existência fosse um contrato assinado com firma reconhecida...
+                    </p>
+                    <div class="post-tags">
+                        <span class="tag">identidade</span>
+                        <span class="tag">reflexão</span>
+                        <span class="tag">filosofia</span>
+                    </div>
+                    <a href="post-espelhos.html" class="read-more">
+                        Ler completo <span class="arrow">→</span>
+                    </a>
+                </article>
+                
+                <!-- Post Card 2 -->
+                <article class="post-card hover-lift">
+                    <div class="post-category">Poema</div>
+                    <h3 class="post-title">
+                        <a href="post-descanse.html">Descanse em Paz</a>
+                    </h3>
+                    <div class="post-meta">
+                        <time datetime="2024-09-24">24 de Setembro, 2024</time>
+                        <span class="post-reading-time">• 2 min</span>
+                    </div>
+                    <p class="post-excerpt">
+                        quando tudo dói, o mundo cala, e a alma chora atrás do olhar... mas mesmo a dor mais funda embala quem se permite repousar.
+                    </p>
+                    <div class="post-tags">
+                        <span class="tag">dor</span>
+                        <span class="tag">beleza</span>
+                        <span class="tag">descanso</span>
+                    </div>
+                    <a href="post-descanse.html" class="read-more">
+                        Ler completo <span class="arrow">→</span>
+                    </a>
+                </article>
+                
+                <!-- Post Card 3 - Coming Soon -->
+                <article class="post-card hover-lift coming-soon">
+                    <div class="post-category">Em Breve</div>
+                    <h3 class="post-title">
+                        Fragmentos do Volume II
+                    </h3>
+                    <div class="post-meta">
+                        <time>Em breve...</time>
+                    </div>
+                    <p class="post-excerpt">
+                        Novos textos do Grimório de Lilith - Volume II: Renascimento das Cinzas. Prepare-se para uma jornada ainda mais profunda através das sombras da alma.
+                    </p>
+                    <div class="post-tags">
+                        <span class="tag">grimório</span>
+                        <span class="tag">volume II</span>
+                        <span class="tag">transformação</span>
+                    </div>
+                    <div class="coming-soon-badge">🔮 Em Breve</div>
+                </article>
+            </div>
+            
+            <div class="section-action">
+                <a href="blog.html" class="btn btn-outline-large">
+                    Ver Todos os Devaneios
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-card mystical-border">
+                <div class="newsletter-icon">📜</div>
+                <h2 class="newsletter-title">Fragmentos Semanais</h2>
+                <p class="newsletter-description">
+                    Receba poemas inéditos, reflexões e novidades sobre o Grimório diretamente no seu email. Sem spam, apenas verdade.
+                </p>
+                
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="seu@email.com" required class="newsletter-input">
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Assinar</span>
+                        <span class="btn-icon">✨</span>
+                    </button>
+                </form>
+                
+                <p class="newsletter-privacy">
+                    <span class="privacy-icon">🔒</span>
+                    Seus dados estão seguros. Cancele quando quiser.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">Memeternum</h3>
+                    <p class="footer-description">
+                        Onde pensamentos se tornam palavras, e palavras se tornam mundos. Um espaço para poemas, contos, fragmentos dramáticos e reflexões sobre a natureza do cosmos e da existência humana.
+                    </p>
+                    <p class="footer-quote">
+                        <em>"Até que o gelo derreta."</em><br>
+                        — Soneca
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="livro.html">O Grimório</a></li>
+                        <li><a href="blog.html">Devaneios</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="apoie.html">Apoie</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contato</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <span class="contact-icon">✉️</span>
+                            <a href="mailto:guivale@hotmail.com">guivale@hotmail.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📱</span>
+                            <a href="https://wa.me/5516997677500" target="_blank">WhatsApp: +55 16 99767-7500</a>
+                        </li>
+                    </ul>
+                    
+                    <h4 class="footer-heading">Apoie o Trabalho</h4>
+                    <div class="footer-support">
+                        <p><strong>PIX:</strong></p>
+                        <code class="pix-code">iguirock@gmail.com</code>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © <span id="currentYear"></span> Guilherme Vale (Soneca). Todos os direitos reservados.
+                </p>
+                <p class="footer-tech">
+                    Site construído com 🖤 usando Jekyll
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
